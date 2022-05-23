@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    height: 755px;
+    font-family: 'Ubuntu';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.corpo{
+    border: 1px solid black;
+    width: 80vw;
+    height: 500px;
+}
+
+h4{
+    font-size: 30px;
+    display: flex;
+}
+
+input{
+    width: 20px;
+    height: 20px;
+}
+
+.botoes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#palavra1{
+    border: 1px solid black;
+    width: 20px;
+    height: 20px;
+    display: flex;
+}
+
+#palavra2{
+    border: 1px solid black;
+    width: 20px;
+    height: 20px;
+    display: flex;
+}
+
+#palavra3{
+    border: 1px solid black;
+    width: 20px;
+    height: 20px;
+    display: flex;
+}
+
+#palavra4{
+    border: 1px solid black;
+    width: 20px;
+    height: 20px;
+    display: flex;
+}
+
+#palavra5{
+    border: 1px solid black;
+    width: 20px;
+    height: 20px;
+    display: flex;
+}
+
+#palavra6{
+    border: 1px solid black;
+    width: 20px;
+    height: 20px;
+    display: flex;
+}
+
+#palavra7{
+    border: 1px solid black;
+    width: 20px;
+    height: 20px;
+    display: flex;
+}
+
+#palavra8{
+    border: 1px solid black;
+    width: 20px;
+    height: 20px;
+    display: flex;
+}
+
+#palavra9{
+    border: 1px solid black;
+    width: 20px;
+    height: 20px;
+    display: flex;
+}
+
+#palavra10{
+    border: 1px solid black;
+    width: 20px;
+    height: 20px;
+    display: flex;
+}
+
+#palavra11{
+    border: 1px solid black;
+    width: 20px;
+    height: 20px;
+    display: flex;
+}
+
+#palavra12{
+    border: 1px solid black;
+    width: 20px;
+    height: 20px;
+    display: flex;
+}
+
+#palavra13{
+    border: 1px solid black;
+    width: 20px;
+    height: 20px;
+    display: flex;
+}
+
+#palavra14{
+    border: 1px solid black;
+    width: 20px;
+    height: 20px;
+    display: flex;
+}
+
+#palavra15{
+    border: 1px solid black;
+    width: 20px;
+    height: 20px;
+    display: flex;
+}
+
+#palavra16{
+    border: 1px solid black;
+    width: 20px;
+    height: 20px;
+    display: flex;
+}
+
+.cpu{
+    display: flex;
+    flex-direction: row;
+}
+
+.ula{
+    display: flex;
+    flex-direction: row;
+}
+
+.registradores{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.ram{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.rom{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.eprom{
+    display: flex;
+    flex-direction: column;
+}
+
+.flash{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.memoriaMassa{
+    display: flex;
+    flex-direction: row;
+}
+
+.dma{
+    display: flex;
+    flex-direction: row;
+}
+
+.chipSelect{
+    display: flex;
+    flex-direction: row;
+}
+
+.addressBus{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.dataBus{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.i5{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.i7{
+    display: flex;
+    flex-direction: row;
+}
+
+.dualCore{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.quadCore{
+    display: flex;
+    flex-direction: row;
+}
