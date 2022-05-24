@@ -11,746 +11,785 @@
 
 <body>
   <div class="conteudo">
+    <div class="titulo">
     <h4>Palavras Cruzadas</h4>
+    </div>
     <div class="botoes">
-      Palavras:<br />
       <div class="primeiroConj">
-      1ª: <button onclick="verificar_palavra1()">Palavra 1</button><br />
-      2ª: <button onclick="verificar_palavra2()">Palavra 2</button><br />
-      3ª: <button onclick="verificar_palavra3()">Palavra 3</button><br />
-      4ª: <button onclick="verificar_palavra4()">Palavra 4</button><br />
-      5ª: <button onclick="verificar_palavra5()">Palavra 5</button><br />
-      6ª: <button onclick="verificar_palavra6()">Palavra 6</button><br />
-      7ª: <button onclick="verificar_palavra7()">Palavra 7</button><br />
-      8ª: <button onclick="verificar_palavra8()">Palavra 8</button><br />
+        <div class="box">
+        <span class="dica">1ª - Dica: CP...</span><br>
+        R:<input type="text" maxlength="3" id="inpt_cpu">
+        <button onclick="verificar_palavra1()">Palavra 1</button><br />
+        </div>
+        <div class="box">
+        <span class="dica">2ª - Dica: Realiza adição e booleana </span><br>
+        R:<input type="text" maxlength="3" id="inpt_ula">
+        <button onclick="verificar_palavra2()">Palavra 2</button><br />
+      </div>
+        <div class="box">
+        <span class="dica">3ª - Dica: Memória dentro da CPU</span><br>
+        R:<input type="text" maxlength="13" id="inpt_registrad">
+        <button onclick="verificar_palavra3()">Palavra 3</button><br />
+      </div>
+        <div class="box">
+        <span class="dica">4ª - Dica: Memória de acesso randomico</span><br>
+        R:<input type="text" maxlength="3" id="inpt_ram">
+        <button onclick="verificar_palavra4()">Palavra 4</button><br />
+      </div>
+      <div class="box">
+        <span class="dica">5ª - Dica: Memória de leitura</span><br>
+        R:<input type="text" maxlength="3" id="inpt_rom">
+        <button onclick="verificar_palavra5()">Palavra 5</button><br />
+      </div>
+        <div class="box">
+          <span class="dica">6ª - Dica: Memória que mantém os dados sem energia</span><br>
+          R:<input type="text" maxlength="5" id="inpt_eprom">
+        <button onclick="verificar_palavra6()">Palavra 6</button><br />
+      </div>
+        <div class="box">
+          <span class="dica">7ª - Dica: FLA...</span><br>
+          R:<input type="text" maxlength="5" id="inpt_flash">
+        <button onclick="verificar_palavra7()">Palavra 7</button><br />
+      </div>
+        <div class="box">
+          <span class="dica">8ª</span><br>
+          <span>R: Memoria Massa</span>
+      </div>
       </div>
       <div class="segundoConj">
-      9ª: <button onclick="verificar_palavra9()">Palavra 9</button><br />
-      10ª: <button onclick="verificar_palavra10()">Palavra 10</button><br />
-      11ª: <button onclick="verificar_palavra11()">Palavra 11</button><br />
-      12ª: <button onclick="verificar_palavra12()">Palavra 12</button><br />
-      13ª: <button onclick="verificar_palavra13()">Palavra 13</button><br />
-      14ª: <button onclick="verificar_palavra14()">Palavra 14</button><br />
-      15ª: <button onclick="verificar_palavra15()">Palavra 15</button><br />
-      16ª: <button onclick="verificar_palavra16()">Palavra 16</button><br />
+        <div class="box">
+          <span class="dica">9ª - Dica: DMA</span><br>
+          R:<input type="text" maxlength="3" id="inpt_dma">
+        <button onclick="verificar_palavra9()">Palavra 9</button><br />
       </div>
-     </div>
+      <div class="box">
+        <span class="dica">10ª - Dica: Seleciona circuitos integrados do mesmo barramento</span><br>
+        R:<input type="text" maxlength="10" id="inpt_cs">
+        <button onclick="verificar_palavra10()">Palavra 10</button><br />
+      </div>
+      <div class="box">
+        <span class="dica">11ª</span><br>
+        <span>R: Addres Buss</span>
+      </div>
+      <div class="box">
+        <span class="dica">12ª - Dica: DATA...</span><br>
+        R:<input type="text" maxlength="7" id="inpt_data">
+        <button onclick="verificar_palavra12()">Palavra 12</button><br />
+      </div>
+      <div class="box">
+        <span class="dica">13ª - Dica: Intel linha 5</span><br>
+        R:<input type="text" maxlength="2" id="inpt_i5">
+        <button onclick="verificar_palavra13()">Palavra 13</button><br />
+      </div>
+      <div class="box">
+        <span class="dica">14ª - Dica: Intel linha 7</span><br>
+        R:<input type="text" maxlength="2" id="inpt_i7">
+        <button onclick="verificar_palavra14()">Palavra 14</button><br />
+      </div>
+      <div class="box">
+        <span class="dica">15ª - Dica: Tem dois núcleos</span><br>
+        R:<input type="text" maxlength="8" id="inpt_dual">
+        <button onclick="verificar_palavra15()">Palavra 15</button><br />
+      </div>
+      <div class="box">
+        <span class="dica">16ª - Dica: QUAD...</span><br>
+        R:<input type="text" maxlength="8" id="inpt_quad">
+        <button onclick="verificar_palavra16()">Palavra 16</button><br />
+      </div>
+      </div>
     </div>
   </div>
+  </div>
   <div class="corpo">
-    <div class="cpu">
-      <div id="palavra1">1</div>
-      <input id="c1" maxlength="1" />
-      <input id="p1" maxlength="1"/>
-      <input id="u1" maxlength="1"/>
+    <div class="coluna">
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+    </div>
+    <div class="coluna">
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+    </div>
+    <div class="coluna">
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+    </div>
+    <div class="coluna">
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras borda" id="cpuC"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+    </div>
+    <div class="coluna">
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras borda" id="cpuP"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+    </div>
+    <div class="coluna">
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras borda" id="dcD"></div>
+      <div class="palavras borda" id="cpuU"></div>
+      <div class="palavras borda" id="dcA"></div>
+      <div class="palavras borda" id="dcL"></div>
+      <div class="palavras borda" id="dcC"></div>
+      <div class="palavras borda" id="dcO"></div>
+      <div class="palavras borda" id="dcR"></div>
+      <div class="palavras borda" id="dcE"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+    </div>
+    <div class="coluna">
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras borda" id="dtA"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+    </div>
+    <div class="coluna">
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras borda" id="dtT"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras borda" id="csC"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+    </div>
+    <div class="coluna">
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras borda" id="ramR"></div>
+      <div class="palavras borda" id="ramA"></div>
+      <div class="palavras borda" id="ramM"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras borda" id="csH"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+    </div>
+    <div class="coluna">
+      <div class="palavras borda" id="ulaU"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras borda" id="dtB"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras borda" id="csI"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+    </div>
+    <div class="coluna">
+      <div class="palavras borda" id="ulaL"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras borda" id="dtU"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras borda" id="csP"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras borda" id="regR1"></div>
+      <div class="palavras"></div>
+    </div>
+    <div class="coluna">
+      <div class="palavras borda">A</div>
+      <div class="palavras borda">D</div>
+      <div class="palavras borda">D</div>
+      <div class="palavras borda">R</div>
+      <div class="palavras borda">E</div>
+      <div class="palavras borda" id="dtS">B</div>
+      <div class="palavras borda">S</div>
+      <div class="palavras borda">B</div>
+      <div class="palavras borda">U</div>
+      <div class="palavras borda">S</div>
+      <div class="palavras"></div>
+      <div class="palavras borda" id="epromE"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras borda" id="regE"></div>
+      <div class="palavras"></div>
+    </div>
+    <div class="coluna">
+      <div class="palavras"></div>
+      <div class="palavras borda" id="dmaM"></div>
+      <div class="palavras"></div>
+      <div class="palavras borda" id="romO"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras borda" id="csE"></div>
+      <div class="palavras"></div>
+      <div class="palavras borda" id="epromP"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras borda" id="flashF"></div>
+      <div class="palavras"></div>
+      <div class="palavras borda" id="regG"></div>
+      <div class="palavras"></div>
+    </div>
+    <div class="coluna">
+      <div class="palavras"></div>
+      <div class="palavras borda" id="dmaA"></div>
+      <div class="palavras"></div>
+      <div class="palavras borda" id="romM"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras borda" id="csL"></div>
+      <div class="palavras"></div>
+      <div class="palavras borda" id="epromR"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras borda" id="flashL"></div>
+      <div class="palavras"></div>
+      <div class="palavras borda" id="regI"></div>
+      <div class="palavras borda" id="i77"></div>
+    </div>
+    <div class="coluna">
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras borda">M</div>
+      <div class="palavras borda">E</div>
+      <div class="palavras borda">M</div>
+      <div class="palavras borda">O</div>
+      <div class="palavras borda">R</div>
+      <div class="palavras borda">I</div>
+      <div class="palavras borda">A</div>
+      <div class="palavras borda">M</div>
+      <div class="palavras borda">A</div>
+      <div class="palavras borda">S</div>
+      <div class="palavras borda">S</div>
+      <div class="palavras borda">A</div>
+    </div>
+    <div class="coluna">
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras borda" id="csC2"></div>
+      <div class="palavras"></div>
+      <div class="palavras borda" id="epromM"></div>
+      <div class="palavras"></div>
+      <div class="palavras borda" id="i55"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras borda" id="flashS"></div>
+      <div class="palavras"></div>
+      <div class="palavras borda" id="regT"></div>
+      <div class="palavras"></div>
+    </div>
+    <div class="coluna">
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras borda" id="csT"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras borda" id="flashH"></div>
+      <div class="palavras"></div>
+      <div class="palavras borda" id="regR2"></div>
+      <div class="palavras"></div>
+    </div>
+    <div class="coluna">
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras borda" id="regA"></div>
+      <div class="palavras"></div>
+    </div>
+    <div class="coluna">
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras borda" id="regD"></div>
+      <div class="palavras"></div>
+    </div>
+    <div class="coluna">
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras borda" id="regO"></div>
+      <div class="palavras"></div>
+    </div>
+    <div class="coluna">
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras borda" id="regR3"></div>
+      <div class="palavras"></div>
+    </div>
+    <div class="coluna">
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras borda" id="quadQ"></div>
+      <div class="palavras borda" id="quadU"></div>
+      <div class="palavras borda" id="quadA"></div>
+      <div class="palavras borda" id="quadD"></div>
+      <div class="palavras borda" id="quadC"></div>
+      <div class="palavras borda" id="quadO"></div>
+      <div class="palavras borda" id="quadR"></div>
+      <div class="palavras borda" id="quadE"></div>
+      <div class="palavras"></div>
+    </div>
+    <div class="coluna">
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras borda" id="regS2"></div>
+      <div class="palavras"></div>
     </div>
 
-    <div class="ula">
-      <div id="palavra2">2</div>
-      <input id="u2" maxlength="1"/>
-      <input id="l2" maxlength="1"/>
-      <input id="a2" maxlength="1"/>
-    </div>
-
-    <div class="registradores">
-      <div id="palavra3">3</div>
-      <input type="text" id="p2r1" maxlength="1"/>
-      <input type="text" id="p2e1" maxlength="1" />
-      <input type="text" id="p2g" maxlength="1"/>
-      <input type="text" id="p2i" maxlength="1"/>
-      <input type="text" id="p2s1" maxlength="1"/>
-      <input type="text" id="p2t" maxlength="1"/>
-      <input type="text" id="p2r2" maxlength="1"/>
-      <input type="text" id="p2a" maxlength="1"/>
-      <input type="text" id="p2d" maxlength="1"/>
-      <input type="text" id="p2o" maxlength="1"/>
-      <input type="text" id="p2r3" maxlength="1"/>
-      <input type="text" id="p2e2" maxlength="1"/>
-      <input type="text" id="p2s2" maxlength="1"/>
-    </div>
-
-    <div class="ram">
-      <div id="palavra4">4</div>
-      <input id="r4" maxlength="1"/>
-      <input id="a4" maxlength="1"/>
-      <input id="m4" maxlength="1"/>
-    </div>
-
-    <div class="rom">
-      <div id="palavra5">5</div>
-      <input id="r5" maxlength="1"/>
-      <input id="o5" maxlength="1"/>
-      <input id="m5" maxlength="1"/>
-    </div>
-
-    <div class="eprom">
-      <div id="palavra6">6</div>
-      <input id="e6" maxlength="1"/>
-      <input id="p6" maxlength="1"/>
-      <input id="r6" maxlength="1"/>
-      <input id="o6" maxlength="1"/>
-      <input id="m6" maxlength="1"/>
-    </div>
-
-    <div class="flash">
-      <div id="palavra7">7</div>
-      <input id="f7" maxlength="1"/>
-      <input id="l7" maxlength="1"/>
-      <input id="a7" maxlength="1"/>
-      <input id="s7" maxlength="1"/>
-      <input id="h7" maxlength="1"/>
-    </div>
-
-    <div class="memoriaMassa">
-      <div id="palavra7">8</div>
-      <input id="m8m1" maxlength="1">
-      <input id="e8" maxlength="1">
-      <input id="m8m2" maxlength="1">
-      <input id="o8" maxlength="1">
-      <input id="r8" maxlength="1">
-      <input id="i8" maxlength="1">
-      <input id="a8a1" maxlength="1">
-      <input id="m8m3" maxlength="1">
-      <input id="a8a2" maxlength="1">
-      <input id="s8s1" maxlength="1">
-      <input id="s8s2" maxlength="1">
-      <input id="a8a3" maxlength="1">
-    </div>
-
-    <div class="dma">
-      <div id="palavra9">9</div>
-      <input id="d9" maxlength="1"/>
-      <input id="m9" maxlength="1"/>
-      <input id="a9" maxlength="1"/>
-    </div>
-
-    <div class="chipSelect">
-      <div id="palavra10">10</div>
-      <input id="c10c1" maxlength="1">
-      <input id="h10" maxlength="1">
-      <input id="i10" maxlength="1">
-      <input id="p10" maxlength="1">
-      <input id="s10" maxlength="1">
-      <input id="e10e1" maxlength="1">
-      <input id="l10" maxlength="1">
-      <input id="e10e2" maxlength="1">
-      <input id="c10c2" maxlength="1">
-      <input id="t10" maxlength="1">
-    </div>
-
-    <div class="addressBus">
-      <div id="palavra11">11</div>
-      <input id="a11" maxlength="1">
-      <input id="d11d1" maxlength="1">
-      <input id="d11d2" maxlength="1">
-      <input id="r11" maxlength="1">
-      <input id="e11" maxlength="1">
-      <input id="s11s1" maxlength="1">
-      <input id="s11s2" maxlength="1">
-      <input id="b11" maxlength="1">
-      <input id="u11" maxlength="1">
-      <input id="s11s3" maxlength="1">
-    </div>
-
-    <div class="dataBus">
-      <div id="palavra12">12</div>
-      <input id="d12" maxlength="1">
-      <input id="a12a1" maxlength="1">
-      <input id="t12" maxlength="1">
-      <input id="a12a2" maxlength="1">
-      <input id="b12" maxlength="1">
-      <input id="u12" maxlength="1">
-      <input id="s12" maxlength="1">
-    </div>
-
-    <div class="i5">
-      <div id="palavra13">13</div>
-      <input id="i13i1" maxlength="1"/>
-      <input id="c13c1" maxlength="1"/>
-      <input id="i13i2" maxlength="1"/>
-      <input id="n13" maxlength="1"/>
-      <input id="c13c2" maxlength="1"/>
-      <input id="o13" maxlength="1"/>
-    </div>
-
-    <div class="i7">
-      <div id="palavra14">14</div>
-      <input id="i14" maxlength="1"/>
-      <input id="s14" maxlength="1"/>
-      <input id="e14e1" maxlength="1"/>
-      <input id="t14" maxlength="1"/>
-      <input id="e14e2" maxlength="1"/>
-    </div>
-
-    <div class="dualCore">
-      <div id="palavra15">15</div>
-      <input id="d15" maxlength="1"/>
-      <input id="u15" maxlength="1"/>
-      <input id="a15" maxlength="1"/>
-      <input id="l15" maxlength="1"/>
-      <input id="c15" maxlength="1"/>
-      <input id="o15" maxlength="1"/>
-      <input id="r15" maxlength="1"/>
-      <input id="e15" maxlength="1"/>
-    </div>
-
-    <div class="quadCore">
-      <div id="palavra16">16</div>
-      <input id="q16" maxlength="1"/>
-      <input id="u16" maxlength="1"/>
-      <input id="a16" maxlength="1"/>
-      <input id="d16" maxlength="1"/>
-      <input id="c16" maxlength="1"/>
-      <input id="o16" maxlength="1"/>
-      <input id="r16" maxlength="1"/>
-      <input id="e16" maxlength="1"/>
-    </div>
+  </div>
 </body>
 
 </html>
 
 <script>
   function verificar_palavra1() {
-    var letraC = c1.value;
-    var letraP = p1.value;
-    var letraU1 = u1.value;
-    if (
-      letraC.toUpperCase() == "C" &&
-      letraP.toUpperCase() == "P" &&
-      letraU1.toUpperCase() == "U"
-    ) {
-      c1.style.border = "1px solid green";
-      p1.style.border = "1px solid green";
-      u1.style.border = "1px solid green";
-    } else {
-      c1.style.border = "1px solid red";
-      p1.style.border = "1px solid red";
-      u1.style.border = "1px solid red";
+    var cpu = inpt_cpu.value;
+    if(cpu.toUpperCase() == "CPU"){
+      cpuC.innerHTML = `C`;
+      cpuP.innerHTML = `P`;
+      cpuU.innerHTML = `U`;
     }
   }
 
   function verificar_palavra2() {
-    var letraU2 = u2.value;
-    var letraL = l2.value;
-    var letraA2 = a2.value;
-    if (
-      letraU2.toUpperCase() == "U" &&
-      letraL.toUpperCase() == "L" &&
-      letraA2.toUpperCase() == "A"
-    ) {
-      u2.style.border = "1px solid green";
-      l2.style.border = "1px solid green";
-      a2.style.border = "1px solid green";
-    } else {
-      u2.style.border = "1px solid red";
-      l2.style.border = "1px solid red";
-      a2.style.border = "1px solid red";
+    var ula = inpt_ula.value;
+    if(ula.toUpperCase() == "ULA"){
+      ulaU.innerHTML = `U`;
+      ulaL.innerHTML = `L`;
     }
   }
 
   function verificar_palavra3() {
-    var p2R1 = p2r1.value;
-    var p2E1 = p2e1.value;
-    var p2G = p2g.value;
-    var p2I = p2i.value;
-    var p2S1 = p2s1.value;
-    var p2T = p2t.value;
-    var p2R2 = p2r2.value;
-    var p2A = p2a.value;
-    var p2D = p2d.value;
-    var p2O = p2o.value;
-    var p2R3 = p2r3.value;
-    var p2E2 = p2e2.value;
-    var p2S2 = p2s2.value;
-    if (
-      p2R1.toUpperCase() == "R" &&
-      p2E1.toUpperCase() == "E" &&
-      p2G.toUpperCase() == "G" &&
-      p2I.toUpperCase() == "I" &&
-      p2S1.toUpperCase() == "S" &&
-      p2T.toUpperCase() == "T" &&
-      p2R2.toUpperCase() == "R" &&
-      p2A.toUpperCase() == "A" &&
-      p2D.toUpperCase() == "D" &&
-      p2O.toUpperCase() == "O" &&
-      p2R3.toUpperCase() == "R" &&
-      p2E2.toUpperCase() == "E" &&
-      p2S2.toUpperCase() == "S"
-    ) {
-      p2r1.style.border = "1px solid green";
-      p2e1.style.border = "1px solid green";
-      p2g.style.border = "1px solid green";
-      p2i.style.border = "1px solid green";
-      p2s1.style.border = "1px solid green";
-      p2t.style.border = "1px solid green";
-      p2r2.style.border = "1px solid green";
-      p2a.style.border = "1px solid green";
-      p2d.style.border = "1px solid green";
-      p2o.style.border = "1px solid green";
-      p2r3.style.border = "1px solid green";
-      p2e2.style.border = "1px solid green";
-      p2s2.style.border = "1px solid green";
-    } else {
-      p2r1.style.border = "1px solid red";
-      p2e1.style.border = "1px solid red";
-      p2g.style.border = "1px solid red";
-      p2i.style.border = "1px solid red";
-      p2s1.style.border = "1px solid red";
-      p2t.style.border = "1px solid red";
-      p2r2.style.border = "1px solid red";
-      p2a.style.border = "1px solid red";
-      p2d.style.border = "1px solid red";
-      p2o.style.border = "1px solid red";
-      p2r3.style.border = "1px solid red";
-      p2e2.style.border = "1px solid red";
-      p2s2.style.border = "1px solid red";
+    var registrad = inpt_registrad.value; 
+
+    if(registrad.toUpperCase() == "REGISTRADORES"){
+      regR1.innerHTML = `R`;
+      regE.innerHTML = `E`;
+      regG.innerHTML = `G`;
+      regI.innerHTML = `I`;
+      regT.innerHTML = `T`;
+      regR2.innerHTML = `R`;
+      regA.innerHTML = `A`;
+      regD.innerHTML = `D`;
+      regO.innerHTML = `O`;
+      regR3.innerHTML = `R`;
+      quadE.innerHTML = `E`;
+      regS2.innerHTML = `S`;
     }
   }
 
   function verificar_palavra4() {
-    var letraR4 = r4.value;
-    var letraA4 = a4.value;
-    var letraM4 = m4.value;
-    if (letraR4.toUpperCase() == "R" && letraA4.toUpperCase() == "A" && letraM4.toUpperCase() == "M") {
-      r4.style.border = "1px solid green";
-      a4.style.border = "1px solid green";
-      m4.style.border = "1px solid green";
-    } else {
-      r4.style.border = "1px solid red";
-      a4.style.border = "1px solid red";
-      m4.style.border = "1px solid red";
+    var ram = inpt_ram.value;
+    if(ram.toUpperCase() == "RAM"){
+      ramR.innerHTML = `R`;
+      ramA.innerHTML = `A`;
+      ramM.innerHTML = `M`;
     }
   }
 
   function verificar_palavra5() {
-    var letraR5 = r5.value;
-    var letraO5 = o5.value;
-    var letraM5 = m5.value;
-    if (letraR5.toUpperCase() == "R" && letraO5.toUpperCase() == "O" && letraM5.toUpperCase() == "M") {
-      r5.style.border = "1px solid green";
-      o5.style.border = "1px solid green";
-      m5.style.border = "1px solid green";
-    } else {
-      r5.style.border = "1px solid red";
-      o5.style.border = "1px solid red";
-      m5.style.border = "1px solid red";
+    var rom = inpt_rom.value;
+    if(rom.toUpperCase() == "ROM"){
+      romO.innerHTML = `O`;
+      romM.innerHTML = `M`;
     }
   }
 
   function verificar_palavra6() {
     // EPROM
-    var letraE6 = e6.value;
-    var letraP6 = p6.value;
-    var letraR6 = r6.value;
-    var letraO6 = o6.value;
-    var letraM6 = m6.value;
-
-    if (
-      letraE6.toUpperCase() == "E" &&
-      letraP6.toUpperCase() == "P" &&
-      letraR6.toUpperCase() == "R" &&
-      letra06.toUpperCase() == "O" &&
-      letraM6.toUpperCase() == "M"
-      ) {
-        e6.style.border = "1px solid green";
-        p6.style.border = "1px solid green";
-        r6.style.border = "1px solid green";
-        o6.style.border = "1px solid green";
-        m6.style.border = "1px solid green";
-    } else {
-        e6.style.border = "1px solid red";
-        p6.style.border = "1px solid red";
-        r6.style.border = "1px solid red";
-        o6.style.border = "1px solid red";
-        m6.style.border = "1px solid red";
+    var eprom = inpt_eprom.value;
+    if(eprom.toUpperCase() == "EPROM"){
+      epromE.innerHTML = `E`;
+      epromP.innerHTML = `P`;
+      epromR.innerHTML = `R`;
+      epromM.innerHTML = `M`;
     }
+
   }
 
   function verificar_palavra7() {
     // FLASH
-    var letraF7 = f7.value;
-    var letraL7 = l7.value;
-    var letraA7 = a7.value;
-    var letraS7 = s7.value;
-    var letraH7 = h7.value;
-
-    if (
-      letraF7.toUpperCase() == "F" &&
-      letraL7.toUpperCase() == "L" &&
-      letraA7.toUpperCase() == "A" &&
-      letraS7.toUpperCase() == "S" &&
-      letraH7.toUpperCase() == "H"
-    ) {
-      f7.style.border = "1px solid green";
-      l7.style.border = "1px solid green";
-      a7.style.border = "1px solid green";
-      s7.style.border = "1px solid green";
-      h7.style.border = "1px solid green";
-    } else {
-      f7.style.border = "1px solid red";
-      l7.style.border = "1px solid red";
-      a7.style.border = "1px solid red";
-      s7.style.border = "1px solid red";
-      h7.style.border = "1px solid red";
-    }
-  }
-
-  function verificar_palavra8() {
-    // memoMassa
-    var letraM8M1 = m8m1.value;
-    var letraE8 = e8.value;
-    var letraM8M2 = m8m2.value;
-    var letraO8 = o8.value;
-    var letraR8 = r8.value;
-    var letraI8 = i8.value;
-    var letraA8A1 = a8a1.value;
-    var letraM8M3 = m8m3.value;
-    var letraA8A2 = a8a1.value;
-    var letraS8S1 = s8s1.value;
-    var letraS8S2 = s8s2.value;
-    var letraA8A3 = a8a3.value;
-
-    if (
-      letraM8M1.toUpperCase() == "M" &&
-      letraE8.toUpperCase() == "E" &&
-      letraM8M2.toUpperCase() == "M" &&
-      letraO8.toUpperCase() == "O" &&
-      letraR8.toUpperCase() == "R" &&
-      letraI8.toUpperCase() == "I" &&
-      letraA8A1.toUpperCase() == "A" &&
-      letraM8M2.toUpperCase() == "M" &&
-      letraA8A2.toUpperCase() == "A" &&
-      letraM8M3.toUpperCase() == "M" &&
-      letraS8S1.toUpperCase() == "S" &&
-      letraS8S2.toUpperCase() == "S" &&
-      letraA8A3.toUpperCase() == "A"
-    ) {
-      m8m1.style.border = "1px solid green";
-      e8.style.border = "1px solid green";
-      m8m2.style.border = "1px solid green";
-      o8.style.border = "1px solid green";
-      r8.style.border = "1px solid green";
-      i8.style.border = "1px solid green";
-      a8a1.style.border = "1px solid green";
-      m8m1.style.border = "1px solid green";
-      a8a2.style.border = "1px solid green";
-      s8s1.style.border = "1px solid green";
-      s8s2.style.border = "1px solid green";
-      a8a3.style.border = "1px solid green";
-    } else {
-      m8m1.style.border = "1px solid red";
-      e8.style.border = "1px solid red";
-      m8m2.style.border = "1px solid red";
-      o8.style.border = "1px solid red";
-      r8.style.border = "1px solid red";
-      i8.style.border = "1px solid red";
-      a8a1.style.border = "1px solid red";
-      m8m1.style.border = "1px solid red";
-      a8a2.style.border = "1px solid red";
-      s8s1.style.border = "1px solid red";
-      s8s2.style.border = "1px solid red";
-      a8a3.style.border = "1px solid red";
+    var flash = inpt_flash.value;
+    if(flash.toUpperCase() == "FLASH"){
+      flashF.innerHTML = `F`;
+      flashL.innerHTML = `L`;
+      flashS.innerHTML = `S`;
+      flashH.innerHTML = `H`;
     }
 
   }
+
+
 
   function verificar_palavra9() {
     // dma
-    var letraD9 = d9.value;
-    var letraM9 = m9.value;
-    var letraA9 = a9.value;
+    var dma = inpt_dma.value
 
-    if (
-      letraD9.toUpperCase() == "D" &&
-      letraM9.toUpperCase() == "M" &&
-      letraA9.toUpperCase() == "A"
-    ) {
-      d9.style.border = "1px solid green";
-      m9.style.border = "1px solid green";
-      a9.style.border = "1px solid green";
-    } else {
-      d9.style.border = "1px solid red";
-      m9.style.border = "1px solid red";
-      a9.style.border = "1px solid red";
+    if(dma.toUpperCase() == "DMA"){
+      dmaM.innerHTML = `M` ;
+      dmaA.innerHTML = `A`;
     }
   }
 
   function verificar_palavra10() {
     // chipSelect
-    var letraC10C1 = c10c1.value;
-    var letraH10 = h10.value;
-    var letraI10 = i10.value;
-    var letraP10 = p10.value;
-    var letraS10 = s10.value;
-    var letraE10E1 = e10e1.value;
-    var letraL10 = l10.value;
-    var letraE10E2 = e10e2.value;
-    var letraC10C2 = c10c2.value;
-    var letraT10 = t10.value;
-
-    if (
-      letraC10C1.toUpperCase() == "C" &&
-      letraH10.toUpperCase() == "H" &&
-      letraI10.toUpperCase() == "I" &&
-      letraP10.toUpperCase() == "P" &&
-      letraS10.toUpperCase() == "S" &&
-      letraE10E1.toUpperCase() == "E" &&
-      letraL10.toUpperCase() == "L" &&
-      letraE10E2.toUpperCase() == "E" &&
-      letraC10C2.toUpperCase() == "C" &&
-      letraT10.toUpperCase() == "T"
-    ) {
-      c10c1.style.border = "1px solid green";
-      h10.style.border = "1px solid green";
-      i10.style.border = "1px solid green";
-      p10.style.border = "1px solid green";
-      s10.style.border = "1px solid green";
-      e10e1.style.border = "1px solid green";
-      l10.style.border = "1px solid green";
-      e10e2.style.border = "1px solid green";
-      c10c2.style.border = "1px solid green";
-      t10.style.border = "1px solid green";
-    } else {
-      c10c1.style.border = "1px solid red";
-      h10.style.border = "1px solid red";
-      i10.style.border = "1px solid red";
-      p10.style.border = "1px solid red";
-      s10.style.border = "1px solid red";
-      e10e1.style.border = "1px solid red";
-      l10.style.border = "1px solid red";
-      e10e2.style.border = "1px solid red";
-      c10c2.style.border = "1px solid red";
-      t10.style.border = "1px solid red";
+    var cs = inpt_cs.value;
+    if(cs.toUpperCase() == "CHIPSELECT"){
+      csC.innerHTML = `C`;
+      csH.innerHTML = `H`;
+      csI.innerHTML = `I`;
+      csP.innerHTML = `P`;
+      csE.innerHTML = `E`;
+      csL.innerHTML = `L`;
+      csC2.innerHTML = `C`;
+      csT.innerHTML = `T`;
     }
+
   }
 
-  function verificar_palavra11() {
-    // addressBus
-    var letraA11 = a11.value;
-    var letraD11D1 = d11d1.value;
-    var letraD11D2 = d11d2.value;
-    var letraR11 = r11.value;
-    var letraE11 = e11.value;
-    var letraS11S1 = s11s1.value;
-    var letraS11S2 = s11s2.value;
-    var letraB11 = b11.value;
-    var letraU11 = u11.value;
-    var letraS11S3 = s11s3.value;
+  // function verificar_palavra11() {
+  //   // addressBus
 
-    if (
-    letraA11.toUpperCase() == "A" &&
-    letraD11D1.toUpperCase() == "D" &&
-    letraD11D2.toUpperCase() == "D" &&
-    letraR11.toUpperCase() == "R" &&
-    letraE11.toUpperCase() == "E" &&
-    letraS11S1.toUpperCase() == "S" &&
-    letraS11S2.toUpperCase() == "S" &&
-    letraB11.toUpperCase() == "B" &&
-    letraU11.toUpperCase() == "U" &&
-    letraS11S3.toUpperCase() == "S"
-    ) {
-      a11.style.border = "1px solid green";
-      d11d1.style.border = "1px solid green";
-      d11d2.style.border = "1px solid green";
-      r11.style.border = "1px solid green";
-      e11.style.border = "1px solid green";
-      s11s1.style.border = "1px solid green";
-      s11s2.style.border = "1px solid green";
-      b11.style.border = "1px solid green";
-      u11.style.border = "1px solid green";
-      s11s3.style.border = "1px solid green";
-    } else {
-      a11.style.border = "1px solid red";
-      d11d1.style.border = "1px solid red";
-      d11d2.style.border = "1px solid red";
-      r11.style.border = "1px solid red";
-      e11.style.border = "1px solid red";
-      s11s1.style.border = "1px solid red";
-      s11s2.style.border = "1px solid red";
-      b11.style.border = "1px solid red";
-      u11.style.border = "1px solid red";
-      s11s3.style.border = "1px solid red";
-    }
-  }
+  // }
 
   function verificar_palavra12() {
     // dataBus
-    var letraD12 = d12.value;
-    var letraA12A1 = a12a1.value;
-    var letraT12 = t12.value;
-    var letraA12A2 = a12a2.value;
-    var letraB12 = b12.value;
-    var letraU12 = u12.value;
-    var letraS12 = s12.value;
-
-    if (
-    letraD12.toUpperCase == "D" &&
-    letraA12A1.toUpperCase == "A" &&
-    letraT12.toUpperCase == "T" &&
-    letraA12A2.toUpperCase == "A" &&
-    letraB12.toUpperCase == "B" &&
-    letraU12.toUpperCase == "U" &&
-    letraS12.toUpperCase == "S"
-    ) {
-      d12.style.border = "1px solid green";
-      a12a1.style.border = "1px solid green";
-      t12.style.border = "1px solid green";
-      a12a2.style.border = "1px solid green";
-      b12.style.border = "1px solid green";
-      u12.style.border = "1px solid green";
-      s12.style.border = "1px solid green";
-    } else {
-      d12.style.border = "1px solid red";
-      a12a1.style.border = "1px solid red";
-      t12.style.border = "1px solid red";
-      a12a2.style.border = "1px solid red";
-      b12.style.border = "1px solid red";
-      u12.style.border = "1px solid red";
-      s12.style.border = "1px solid red";
+    var dataBus = inpt_data.value;
+    if(dataBus.toUpperCase() == "DATABUS"){
+      dcD.innerHTML = `D`;
+      dtA.innerHTML = `A`;
+      dtT.innerHTML = `T`;
+      ramA.innerHTML = `A`;
+      dtB.innerHTML = `B`;
+      dtU.innerHTML = `U`;
+      dtS.innerHTML = `S`;
     }
+
   }
 
   function verificar_palavra13() {
-    // iCinco
-    var letraI13I1 = i13i1.value;
-    var letraC13C1 = c13c1.value;
-    var letraI13I2 = i13i2.value;
-    var letraN13 = n13.value
-    var letraC13C2 = c13c2.value;
-    var letraO13 = o13.value;
-
-    if (
-      letraI13I1.toUpperCase() == "I" && 
-      letraC13C1.toUpperCase() == "C" &&
-      letraI13I2.toUpperCase() == "I" &&
-      letraN13.toUpperCase() == "N" &&
-      letraC13C2.toUpperCase() == "C" &&
-      letraO13.toUpperCase() == "O"
-    ) {
-      i13i1.style.border = "1px solid green";
-      c13c1.style.border = "1px solid green";
-      i13i2.style.border = "1px solid green";
-      n13.style.border = "1px solid green";
-      c13c2.style.border = "1px solid green";
-      o13.style.border = "1px solid green";
-    } else {
-      i13i1.style.border = "1px solid red";
-      c13c1.style.border = "1px solid red";
-      i13i2.style.border = "1px solid red";
-      n13.style.border = "1px solid red";
-      c13c2.style.border = "1px solid red";
-      o13.style.border = "1px solid red";
+    // i5
+    var i5 = inpt_i5.value;
+    if(i5.toUpperCase() == "I5"){
+      i55.innerHTML = `5`;
     }
+
   }
 
   function verificar_palavra14() {
     // i7
-    var letrai14 = i14.value;
-    var letraS14 = s14.value;
-    var letraE14E1 = e14e1.value;
-    var letraT14 = t14.value;
-    var letraE14E2 = e14e2.value;
-
-    if (
-      letrai14.toUpperCase() == "I" && 
-      letraS14.toUpperCase() == "S" && 
-      letraE14E1.toUpperCase() == "E" && 
-      letraT14.toUpperCase() == "T" && 
-      letraE14E2.toUpperCase() == "E" 
-    ) {
-      i14.style.border = "1px solid green";
-      s14.style.border = "1px solid green";
-      e14e1.style.border = "1px solid green";
-      t14.style.border = "1px solid green";
-      e14e2.style.border = "1px solid green";
-    } else {
-      i14.style.border = "1px solid red";
-      s14.style.border = "1px solid red";
-      e14e1.style.border = "1px solid red";
-      t14.style.border = "1px solid red";
-      e14e2.style.border = "1px solid red";
+    var i7 = inpt_i7.value;
+    if(i7.toUpperCase() == "I7"){
+      regI.innerHTML = `I`;
+      i77.innerHTML = `7`;
     }
+
   }
 
   function verificar_palavra15() {
     // dual core
-    var letraD15 = d15.value;
-    var letraU15 = u15.value;
-    var letraA15 = a15.value;
-    var letraL15 = l15.value;
-    var letraC15 = c15.value;
-    var letraO15 = o15.value;
-    var letraR15 = r15.value;
-    var letraE15 = e15.value;
+    var dualCore = inpt_dual.value;
 
-    if (
-    letraD15.toUpperCase() == "D" &&
-    letraU15.toUpperCase() == "U" &&
-    letraA15.toUpperCase() == "A" &&
-    letraL15.toUpperCase() == "L" &&
-    letraC15.toUpperCase() == "C" &&
-    letraO15.toUpperCase() == "O" &&
-    letraR15.toUpperCase() == "R" &&
-    letraE15.toUpperCase() == "E" 
-    ) {
-      d15.style.border = "1px solid green";
-      u15.style.border = "1px solid green";
-      a15.style.border = "1px solid green";
-      l15.style.border = "1px solid green";
-      c15.style.border = "1px solid green";
-      o15.style.border = "1px solid green";
-      r15.style.border = "1px solid green";
-      e15.style.border = "1px solid green";
-    } else {
-      d15.style.border = "1px solid red";
-      u15.style.border = "1px solid red";
-      a15.style.border = "1px solid red";
-      l15.style.border = "1px solid red";
-      c15.style.border = "1px solid red";
-      o15.style.border = "1px solid red";
-      r15.style.border = "1px solid red";
-      e15.style.border = "1px solid red";
+    if(dualCore.toUpperCase() == "DUALCORE"){
+      dcD.innerHTML = `D`;
+      cpuU.innerHTML = `U`;
+      dcA.innerHTML = `A`;
+      dcL.innerHTML = `L`;
+      dcC.innerHTML = `C`;
+      dcO.innerHTML = `O`;
+      dcR.innerHTML = `R`;
+      dcE.innerHTML = `E`;
     }
+
+
 
   }
+
   function verificar_palavra16() {
     // quad core
-    var letraQ16 = q16.value;
-    var letraU16 = u16.value;
-    var letraA16 = a16.value;
-    var letraD16 = d16.value;
-    var letraC16 = c16.value;
-    var letraO16 = o16.value;
-    var letraR16 = r16.value;
-    var letraE16 = e16.value;
-
-    if (
-    letraQ16.toUpperCase == "Q" &&
-    letraU16.toUpperCase == "U" &&
-    letraA16.toUpperCase == "A" &&
-    letraD16.toUpperCase == "D" &&
-    letraC16.toUpperCase == "C" &&
-    letraO16.toUpperCase == "O" &&
-    letraR16.toUpperCase == "R" &&
-    letraE16.toUpperCase == "E" 
-    ) {
-      q16.style.border = "1px solid green";
-      u16.style.border = "1px solid green";
-      a16.style.border = "1px solid green";
-      d16.style.border = "1px solid green";
-      c16.style.border = "1px solid green";
-      o16.style.border = "1px solid green";
-      r16.style.border = "1px solid green";
-      e16.style.border = "1px solid green";
-    } else {
-      q16.style.border = "1px solid red";
-      u16.style.border = "1px solid red";
-      a16.style.border = "1px solid red";
-      d16.style.border = "1px solid red";
-      c16.style.border = "1px solid red";
-      o16.style.border = "1px solid red";
-      r16.style.border = "1px solid red";
-      e16.style.border = "1px solid red";
+    var quadCore = inpt_quad.value;
+    if(quadCore.toUpperCase() == "QUADCORE"){
+      quadQ.innerHTML = `Q`;
+      quadU.innerHTML = `U`;
+      quadA.innerHTML = `A`;
+      quadD.innerHTML = `D`;
+      quadC.innerHTML = `C`;
+      quadO.innerHTML = `O`;
+      quadR.innerHTML = `R`;
+      quadE.innerHTML = `E`;
     }
+
   }
 </script>
