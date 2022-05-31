@@ -59,6 +59,7 @@ function verificar_palavra1() {
       epromP.innerHTML = `P`;
       epromR.innerHTML = `R`;
       epromM.innerHTML = `M`;
+      document.getElementsByClassName();
     }
 
   }

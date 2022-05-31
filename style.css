@@ -6,7 +6,7 @@ body{
     height: 630px;
     font-family: 'Ubuntu';
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 
 h4{
@@ -16,7 +16,7 @@ h4{
 
 input{
     width: 150px;
-    height: 30px;
+    height: 25px;
     border: 1px solid black;
     border-radius: 10px;
     margin-top: 5px;
@@ -24,7 +24,7 @@ input{
 
 button{
     justify-self: flex-end;
-    width: 100px;
+    width: 97px;
 }
 
 .titulo{
@@ -78,6 +78,7 @@ button{
 
 .dica{
     margin-top: 5px;
+    font-size: 17px;
     font-weight: 900;
     color: black;
 }
@@ -86,4 +87,9 @@ span{
     font-weight: 900;
     color: rgb(6, 184, 0);
     
+}
+
+#nmr{
+    color: black;
+    font-weight: bolder;
 }
