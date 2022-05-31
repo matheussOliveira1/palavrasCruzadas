@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
 <head>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -19,37 +19,37 @@
         <div class="box">
         <span class="dica">1ª - Dica: CP...</span><br>
         R:<input type="text" maxlength="3" id="inpt_cpu">
-        <button onclick="verificar_palavra1()">Palavra 1</button><br />
+        <button class="btn btn-dark btn-sm mt-2"onclick="verificar_palavra1()">Palavra 1</button><br />
         </div>
         <div class="box">
         <span class="dica">2ª - Dica: Realiza adição e booleana </span><br>
         R:<input type="text" maxlength="3" id="inpt_ula">
-        <button onclick="verificar_palavra2()">Palavra 2</button><br />
+        <button class="btn btn-dark btn-sm"onclick="verificar_palavra2()">Palavra 2</button><br />
       </div>
         <div class="box">
         <span class="dica">3ª - Dica: Memória dentro da CPU</span><br>
         R:<input type="text" maxlength="13" id="inpt_registrad">
-        <button onclick="verificar_palavra3()">Palavra 3</button><br />
+        <button class="btn btn-dark btn-sm"onclick="verificar_palavra3()">Palavra 3</button><br />
       </div>
         <div class="box">
         <span class="dica">4ª - Dica: Memória de acesso randomico</span><br>
         R:<input type="text" maxlength="3" id="inpt_ram">
-        <button onclick="verificar_palavra4()">Palavra 4</button><br />
+        <button class="btn btn-dark btn-sm"onclick="verificar_palavra4()">Palavra 4</button><br />
       </div>
       <div class="box">
         <span class="dica">5ª - Dica: Memória de leitura</span><br>
         R:<input type="text" maxlength="3" id="inpt_rom">
-        <button onclick="verificar_palavra5()">Palavra 5</button><br />
+        <button class="btn btn-dark btn-sm"onclick="verificar_palavra5()">Palavra 5</button><br />
       </div>
         <div class="box">
           <span class="dica">6ª - Dica: Memória que mantém os dados sem energia</span><br>
           R:<input type="text" maxlength="5" id="inpt_eprom">
-        <button onclick="verificar_palavra6()">Palavra 6</button><br />
+        <button class="btn btn-dark btn-sm"onclick="verificar_palavra6()" class="btn">Palavra 6</button><br />
       </div>
         <div class="box">
           <span class="dica">7ª - Dica: FLA...</span><br>
           R:<input type="text" maxlength="5" id="inpt_flash">
-        <button onclick="verificar_palavra7()">Palavra 7</button><br />
+        <button class="btn btn-dark btn-sm"onclick="verificar_palavra7()">Palavra 7</button><br />
       </div>
         <div class="box">
           <span class="dica">8ª</span><br>
@@ -60,12 +60,12 @@
         <div class="box">
           <span class="dica">9ª - Dica: É um atalho de processos</span><br>
           R:<input type="text" maxlength="3" id="inpt_dma">
-        <button onclick="verificar_palavra9()">Palavra 9</button><br />
+        <button class="btn btn-dark btn-sm"onclick="verificar_palavra9()">Palavra 9</button><br />
       </div>
       <div class="box">
         <span class="dica">10ª - Dica: Seleciona circuitos integrados do mesmo barramento</span><br>
         R:<input type="text" maxlength="10" id="inpt_cs">
-        <button onclick="verificar_palavra10()">Palavra 10</button><br />
+        <button class="btn btn-dark btn-sm"onclick="verificar_palavra10()">Palavra 10</button><br />
       </div>
       <div class="box">
         <span class="dica">11ª</span><br>
@@ -74,27 +74,27 @@
       <div class="box">
         <span class="dica">12ª - Dica: DATA...</span><br>
         R:<input type="text" maxlength="7" id="inpt_data">
-        <button onclick="verificar_palavra12()">Palavra 12</button><br />
+        <button class="btn btn-dark btn-sm"onclick="verificar_palavra12()">Palavra 12</button><br />
       </div>
       <div class="box">
         <span class="dica">13ª - Dica: Intel linha 5</span><br>
         R:<input type="text" maxlength="2" id="inpt_i5">
-        <button onclick="verificar_palavra13()">Palavra 13</button><br />
+        <button class="btn btn-dark btn-sm"onclick="verificar_palavra13()">Palavra 13</button><br />
       </div>
       <div class="box">
         <span class="dica">14ª - Dica: Intel linha 7</span><br>
         R:<input type="text" maxlength="2" id="inpt_i7">
-        <button onclick="verificar_palavra14()">Palavra 14</button><br />
+        <button class="btn btn-dark btn-sm"onclick="verificar_palavra14()">Palavra 14</button><br />
       </div>
       <div class="box">
         <span class="dica">15ª - Dica: Tem dois núcleos</span><br>
         R:<input type="text" maxlength="8" id="inpt_dual">
-        <button onclick="verificar_palavra15()">Palavra 15</button><br />
+        <button class="btn btn-dark btn-sm"onclick="verificar_palavra15()">Palavra 15</button><br />
       </div>
       <div class="box">
         <span class="dica">16ª - Dica: QUAD...</span><br>
         R:<input type="text" maxlength="8" id="inpt_quad">
-        <button onclick="verificar_palavra16()">Palavra 16</button><br />
+        <button class="btn btn-dark btn-sm"onclick="verificar_palavra16()">Palavra 16</button><br />
       </div>
       </div>
     </div>
@@ -174,7 +174,7 @@
       <div class="palavras"></div>
       <div class="palavras"></div>
       <div class="palavras"></div>
-      <div class="palavras borda" id="cpuC"></div>
+      <div class="palavras border border-dark rounded" id="cpuC"></div>
       <div class="palavras"></div>
       <div class="palavras"></div>
       <div class="palavras"></div>
@@ -196,7 +196,7 @@
       <div class="palavras"></div>
       <div class="palavras"></div>
       <div class="palavras"></div>
-      <div class="palavras borda" id="cpuP"></div>
+      <div class="palavras border border-dark rounded" id="cpuP"></div>
       <div class="palavras"></div>
       <div class="palavras"></div>
       <div class="palavras"></div>
@@ -217,14 +217,14 @@
       <div class="palavras"></div>
       <div class="palavras"></div>
       <div class="palavras"></div>
-      <div class="palavras borda" id="dcD"></div>
-      <div class="palavras borda" id="cpuU"></div>
-      <div class="palavras borda" id="dcA"></div>
-      <div class="palavras borda" id="dcL"></div>
-      <div class="palavras borda" id="dcC"></div>
-      <div class="palavras borda" id="dcO"></div>
-      <div class="palavras borda" id="dcR"></div>
-      <div class="palavras borda" id="dcE"></div>
+      <div class="palavras border border-dark rounded" id="dcD"></div>
+      <div class="palavras border border-dark rounded" id="cpuU"></div>
+      <div class="palavras border border-dark rounded" id="dcA"></div>
+      <div class="palavras border border-dark rounded" id="dcL"></div>
+      <div class="palavras border border-dark rounded" id="dcC"></div>
+      <div class="palavras border border-dark rounded" id="dcO"></div>
+      <div class="palavras border border-dark rounded" id="dcR"></div>
+      <div class="palavras border border-dark rounded" id="dcE"></div>
       <div class="palavras"></div>
       <div class="palavras"></div>
       <div class="palavras"></div>
@@ -239,33 +239,11 @@
       <div class="palavras"></div>
       <div class="palavras"></div>
       <div class="palavras"></div>
-      <div class="palavras borda" id="dtA"></div>
+      <div class="palavras border border-dark rounded" id="dtA"></div>
       <div class="palavras"></div>
       <div class="palavras"></div>
       <div class="palavras"></div>
       <div class="palavras"></div>
-      <div class="palavras"></div>
-      <div class="palavras"></div>
-      <div class="palavras"></div>
-      <div class="palavras"></div>
-      <div class="palavras"></div>
-      <div class="palavras"></div>
-      <div class="palavras"></div>
-      <div class="palavras"></div>
-      <div class="palavras"></div>
-      <div class="palavras"></div>
-    </div>
-    <div class="coluna">
-      <div class="palavras"></div>
-      <div class="palavras"></div>
-      <div class="palavras"></div>
-      <div class="palavras"></div>
-      <div class="palavras"></div>
-      <div class="palavras borda" id="dtT"></div>
-      <div class="palavras"></div>
-      <div class="palavras"></div>
-      <div class="palavras"></div>
-      <div class="palavras borda" id="csC"></div>
       <div class="palavras"></div>
       <div class="palavras"></div>
       <div class="palavras"></div>
@@ -282,34 +260,12 @@
       <div class="palavras"></div>
       <div class="palavras"></div>
       <div class="palavras"></div>
-      <div class="palavras borda" id="ramR"></div>
-      <div class="palavras borda" id="ramA"></div>
-      <div class="palavras borda" id="ramM"></div>
       <div class="palavras"></div>
-      <div class="palavras"></div>
-      <div class="palavras borda" id="csH"></div>
+      <div class="palavras border border-dark rounded" id="dtT"></div>
       <div class="palavras"></div>
       <div class="palavras"></div>
       <div class="palavras"></div>
-      <div class="palavras"></div>
-      <div class="palavras"></div>
-      <div class="palavras"></div>
-      <div class="palavras"></div>
-      <div class="palavras"></div>
-      <div class="palavras"></div>
-      <div class="palavras"></div>
-    </div>
-    <div class="coluna">
-      <div class="palavras borda" id="ulaU"></div>
-      <div class="palavras"></div>
-      <div class="palavras"></div>
-      <div class="palavras"></div>
-      <div class="palavras"></div>
-      <div class="palavras borda" id="dtB"></div>
-      <div class="palavras"></div>
-      <div class="palavras"></div>
-      <div class="palavras"></div>
-      <div class="palavras borda" id="csI"></div>
+      <div class="palavras border border-dark rounded" id="csC"></div>
       <div class="palavras"></div>
       <div class="palavras"></div>
       <div class="palavras"></div>
@@ -322,16 +278,38 @@
       <div class="palavras"></div>
     </div>
     <div class="coluna">
-      <div class="palavras borda" id="ulaL"></div>
       <div class="palavras"></div>
       <div class="palavras"></div>
       <div class="palavras"></div>
       <div class="palavras"></div>
-      <div class="palavras borda" id="dtU"></div>
+      <div class="palavras border border-dark rounded" id="ramR"></div>
+      <div class="palavras border border-dark rounded" id="ramA"></div>
+      <div class="palavras border border-dark rounded" id="ramM"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras border border-dark rounded" id="csH"></div>
       <div class="palavras"></div>
       <div class="palavras"></div>
       <div class="palavras"></div>
-      <div class="palavras borda" id="csP"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+    </div>
+    <div class="coluna">
+      <div class="palavras border border-dark rounded" id="ulaU"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras border border-dark rounded" id="dtB"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras border border-dark rounded" id="csI"></div>
       <div class="palavras"></div>
       <div class="palavras"></div>
       <div class="palavras"></div>
@@ -340,140 +318,96 @@
       <div class="palavras"></div>
       <div class="palavras"></div>
       <div class="palavras"></div>
-      <div class="palavras borda" id="regR1"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+    </div>
+    <div class="coluna">
+      <div class="palavras border border-dark rounded" id="ulaL"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras border border-dark rounded" id="dtU"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras border border-dark rounded" id="csP"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras border border-dark rounded" id="regR1"></div>
       <div class="palavras"></div>
     </div>
     <div class="coluna">
-      <div class="palavras borda">A</div>
-      <div class="palavras borda">D</div>
-      <div class="palavras borda">D</div>
-      <div class="palavras borda">R</div>
-      <div class="palavras borda">E</div>
-      <div class="palavras borda" id="dtS">B</div>
-      <div class="palavras borda">S</div>
-      <div class="palavras borda">B</div>
-      <div class="palavras borda">U</div>
-      <div class="palavras borda">S</div>
+      <div class="palavras border border-dark rounded">A</div>
+      <div class="palavras border border-dark rounded">D</div>
+      <div class="palavras border border-dark rounded">D</div>
+      <div class="palavras border border-dark rounded">R</div>
+      <div class="palavras border border-dark rounded">E</div>
+      <div class="palavras border border-dark rounded" id="dtS">B</div>
+      <div class="palavras border border-dark rounded">S</div>
+      <div class="palavras border border-dark rounded">B</div>
+      <div class="palavras border border-dark rounded">U</div>
+      <div class="palavras border border-dark rounded">S</div>
       <div class="palavras"></div>
-      <div class="palavras borda" id="epromE"></div>
-      <div class="palavras"></div>
-      <div class="palavras"></div>
-      <div class="palavras"></div>
-      <div class="palavras"></div>
-      <div class="palavras"></div>
-      <div class="palavras"></div>
-      <div class="palavras borda" id="regE"></div>
-      <div class="palavras"></div>
-    </div>
-    <div class="coluna">
-      <div class="palavras"></div>
-      <div class="palavras borda" id="dmaM"></div>
-      <div class="palavras"></div>
-      <div class="palavras borda" id="romO"></div>
-      <div class="palavras"></div>
-      <div class="palavras"></div>
-      <div class="palavras"></div>
-      <div class="palavras"></div>
-      <div class="palavras"></div>
-      <div class="palavras borda" id="csE"></div>
-      <div class="palavras"></div>
-      <div class="palavras borda" id="epromP"></div>
-      <div class="palavras"></div>
-      <div class="palavras"></div>
-      <div class="palavras"></div>
-      <div class="palavras"></div>
-      <div class="palavras borda" id="flashF"></div>
-      <div class="palavras"></div>
-      <div class="palavras borda" id="regG"></div>
-      <div class="palavras"></div>
-    </div>
-    <div class="coluna">
-      <div class="palavras"></div>
-      <div class="palavras borda" id="dmaA"></div>
-      <div class="palavras"></div>
-      <div class="palavras borda" id="romM"></div>
-      <div class="palavras"></div>
-      <div class="palavras"></div>
-      <div class="palavras"></div>
-      <div class="palavras"></div>
-      <div class="palavras"></div>
-      <div class="palavras borda" id="csL"></div>
-      <div class="palavras"></div>
-      <div class="palavras borda" id="epromR"></div>
-      <div class="palavras"></div>
-      <div class="palavras"></div>
-      <div class="palavras"></div>
-      <div class="palavras"></div>
-      <div class="palavras borda" id="flashL"></div>
-      <div class="palavras"></div>
-      <div class="palavras borda" id="regI"></div>
-      <div class="palavras borda" id="i77"></div>
-    </div>
-    <div class="coluna">
+      <div class="palavras border border-dark rounded" id="epromE"></div>
       <div class="palavras"></div>
       <div class="palavras"></div>
       <div class="palavras"></div>
       <div class="palavras"></div>
       <div class="palavras"></div>
       <div class="palavras"></div>
-      <div class="palavras"></div>
-      <div class="palavras"></div>
-      <div class="palavras borda">M</div>
-      <div class="palavras borda">E</div>
-      <div class="palavras borda">M</div>
-      <div class="palavras borda">O</div>
-      <div class="palavras borda">R</div>
-      <div class="palavras borda">I</div>
-      <div class="palavras borda">A</div>
-      <div class="palavras borda">M</div>
-      <div class="palavras borda">A</div>
-      <div class="palavras borda">S</div>
-      <div class="palavras borda">S</div>
-      <div class="palavras borda">A</div>
-    </div>
-    <div class="coluna">
-      <div class="palavras"></div>
-      <div class="palavras"></div>
-      <div class="palavras"></div>
-      <div class="palavras"></div>
-      <div class="palavras"></div>
-      <div class="palavras"></div>
-      <div class="palavras"></div>
-      <div class="palavras"></div>
-      <div class="palavras"></div>
-      <div class="palavras borda" id="csC2"></div>
-      <div class="palavras"></div>
-      <div class="palavras borda" id="epromM"></div>
-      <div class="palavras"></div>
-      <div class="palavras borda" id="i55"></div>
-      <div class="palavras"></div>
-      <div class="palavras"></div>
-      <div class="palavras borda" id="flashS"></div>
-      <div class="palavras"></div>
-      <div class="palavras borda" id="regT"></div>
+      <div class="palavras border border-dark rounded" id="regE"></div>
       <div class="palavras"></div>
     </div>
     <div class="coluna">
       <div class="palavras"></div>
+      <div class="palavras border border-dark rounded" id="dmaM"></div>
+      <div class="palavras"></div>
+      <div class="palavras border border-dark rounded" id="romO"></div>
       <div class="palavras"></div>
       <div class="palavras"></div>
       <div class="palavras"></div>
       <div class="palavras"></div>
       <div class="palavras"></div>
+      <div class="palavras border border-dark rounded" id="csE"></div>
       <div class="palavras"></div>
-      <div class="palavras"></div>
-      <div class="palavras"></div>
-      <div class="palavras borda" id="csT"></div>
-      <div class="palavras"></div>
+      <div class="palavras border border-dark rounded" id="epromP"></div>
       <div class="palavras"></div>
       <div class="palavras"></div>
       <div class="palavras"></div>
       <div class="palavras"></div>
+      <div class="palavras border border-dark rounded" id="flashF"></div>
       <div class="palavras"></div>
-      <div class="palavras borda" id="flashH"></div>
+      <div class="palavras border border-dark rounded" id="regG"></div>
       <div class="palavras"></div>
-      <div class="palavras borda" id="regR2"></div>
+    </div>
+    <div class="coluna">
       <div class="palavras"></div>
+      <div class="palavras border border-dark rounded" id="dmaA"></div>
+      <div class="palavras"></div>
+      <div class="palavras border border-dark rounded" id="romM"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras border border-dark rounded" id="csL"></div>
+      <div class="palavras"></div>
+      <div class="palavras border border-dark rounded" id="epromR"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras border border-dark rounded" id="flashL"></div>
+      <div class="palavras"></div>
+      <div class="palavras border border-dark rounded" id="regI"></div>
+      <div class="palavras border border-dark rounded" id="i77"></div>
     </div>
     <div class="coluna">
       <div class="palavras"></div>
@@ -484,6 +418,20 @@
       <div class="palavras"></div>
       <div class="palavras"></div>
       <div class="palavras"></div>
+      <div class="palavras border border-dark rounded">M</div>
+      <div class="palavras border border-dark rounded">E</div>
+      <div class="palavras border border-dark rounded">M</div>
+      <div class="palavras border border-dark rounded">O</div>
+      <div class="palavras border border-dark rounded">R</div>
+      <div class="palavras border border-dark rounded">I</div>
+      <div class="palavras border border-dark rounded">A</div>
+      <div class="palavras border border-dark rounded">M</div>
+      <div class="palavras border border-dark rounded">A</div>
+      <div class="palavras border border-dark rounded">S</div>
+      <div class="palavras border border-dark rounded">S</div>
+      <div class="palavras border border-dark rounded">A</div>
+    </div>
+    <div class="coluna">
       <div class="palavras"></div>
       <div class="palavras"></div>
       <div class="palavras"></div>
@@ -493,8 +441,38 @@
       <div class="palavras"></div>
       <div class="palavras"></div>
       <div class="palavras"></div>
+      <div class="palavras border border-dark rounded" id="csC2"></div>
       <div class="palavras"></div>
-      <div class="palavras borda" id="regA"></div>
+      <div class="palavras border border-dark rounded" id="epromM"></div>
+      <div class="palavras"></div>
+      <div class="palavras border border-dark rounded" id="i55"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras border border-dark rounded" id="flashS"></div>
+      <div class="palavras"></div>
+      <div class="palavras border border-dark rounded" id="regT"></div>
+      <div class="palavras"></div>
+    </div>
+    <div class="coluna">
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras border border-dark rounded" id="csT"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras border border-dark rounded" id="flashH"></div>
+      <div class="palavras"></div>
+      <div class="palavras border border-dark rounded" id="regR2"></div>
       <div class="palavras"></div>
     </div>
     <div class="coluna">
@@ -516,7 +494,7 @@
       <div class="palavras"></div>
       <div class="palavras"></div>
       <div class="palavras"></div>
-      <div class="palavras borda" id="regD"></div>
+      <div class="palavras border border-dark rounded" id="regA"></div>
       <div class="palavras"></div>
     </div>
     <div class="coluna">
@@ -538,7 +516,7 @@
       <div class="palavras"></div>
       <div class="palavras"></div>
       <div class="palavras"></div>
-      <div class="palavras borda" id="regO"></div>
+      <div class="palavras border border-dark rounded" id="regD"></div>
       <div class="palavras"></div>
     </div>
     <div class="coluna">
@@ -560,29 +538,7 @@
       <div class="palavras"></div>
       <div class="palavras"></div>
       <div class="palavras"></div>
-      <div class="palavras borda" id="regR3"></div>
-      <div class="palavras"></div>
-    </div>
-    <div class="coluna">
-      <div class="palavras"></div>
-      <div class="palavras"></div>
-      <div class="palavras"></div>
-      <div class="palavras"></div>
-      <div class="palavras"></div>
-      <div class="palavras"></div>
-      <div class="palavras"></div>
-      <div class="palavras"></div>
-      <div class="palavras"></div>
-      <div class="palavras"></div>
-      <div class="palavras"></div>
-      <div class="palavras borda" id="quadQ"></div>
-      <div class="palavras borda" id="quadU"></div>
-      <div class="palavras borda" id="quadA"></div>
-      <div class="palavras borda" id="quadD"></div>
-      <div class="palavras borda" id="quadC"></div>
-      <div class="palavras borda" id="quadO"></div>
-      <div class="palavras borda" id="quadR"></div>
-      <div class="palavras borda" id="quadE"></div>
+      <div class="palavras border border-dark rounded" id="regO"></div>
       <div class="palavras"></div>
     </div>
     <div class="coluna">
@@ -604,7 +560,51 @@
       <div class="palavras"></div>
       <div class="palavras"></div>
       <div class="palavras"></div>
-      <div class="palavras borda" id="regS2"></div>
+      <div class="palavras border border-dark rounded" id="regR3"></div>
+      <div class="palavras"></div>
+    </div>
+    <div class="coluna">
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras border border-dark rounded" id="quadQ"></div>
+      <div class="palavras border border-dark rounded" id="quadU"></div>
+      <div class="palavras border border-dark rounded" id="quadA"></div>
+      <div class="palavras border border-dark rounded" id="quadD"></div>
+      <div class="palavras border border-dark rounded" id="quadC"></div>
+      <div class="palavras border border-dark rounded" id="quadO"></div>
+      <div class="palavras border border-dark rounded" id="quadR"></div>
+      <div class="palavras border border-dark rounded" id="quadE"></div>
+      <div class="palavras"></div>
+    </div>
+    <div class="coluna">
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras"></div>
+      <div class="palavras border border-dark rounded" id="regS2"></div>
       <div class="palavras"></div>
     </div>
 
